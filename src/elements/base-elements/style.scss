@@ -1,0 +1,253 @@
+:root {
+  --font-family: 'Gaegu', sans-serif;
+  /* Grayscale */
+  --transparent: transparent;
+  --black: #000;
+  --gray1: #333;
+  --gray2: #666;
+  --gray3: #999;
+  --gray4: #bbb;
+  --gray5: #ddd;
+  --gray6: #f3f3f3;
+  --white: #fff;
+  /* Colors */
+  --red: #D7263D;
+  --red2: #F4C3CA;
+  --red3: #E57483;
+  --red4: #891927;
+  --red5: #4F0E17;
+  --orange: #EFA00B;
+  --orange2: #FAE5BC;
+  --orange3: #F4C263;
+  --orange4: #996608;
+  --orange5: #573B04;
+  --yellow: #ECFC07;
+  --yellow2: #FBFFCD;
+  --yellow3: #F6FF8B;
+  --yellow4: #9BA32F;
+  --yellow5: #565C03;
+  --green: #7FB800;
+  --green2: #DCEBB9;
+  --green3: #ADD15C;
+  --green4: #517600;
+  --green5: #2F4300;
+  --teal: #1be7ff;
+  --teal2: #C0F8FF;
+  --teal3: #6DEFFF;
+  --teal4: #1293A3;
+  --teal5: #0A545D;
+  --blue: #2294E3;
+  --blue2: #C2E1F7;
+  --blue3: #7ED1F8;
+  --blue4: #165F91;
+  --blue5: #0D3653;
+  --purple: #7E13A5;
+  --purple2: #DBBEE6;
+  --purple3: #AC68C5;
+  --purple4: #510D6A;
+  --purple5: #2E073C;
+  --pink: #FB62F6;
+  --pink2: #FDD4FC;
+  --pink3: #FC9BF9;
+  --pink4: #A03F9D;
+  --pink5: #5C245A;
+  /* Component defaults */
+  --component-bg: var(--white);
+  --component-bg-secondary: var(--gray5);
+  --component-border-color: var(--gray1);
+  --component-border-secondary: rgba(0,0,0,.15);
+  --component-border-width: 2px;
+  --component-border-width-neg: calc(0px - var(--component-border-width));
+  --component-active: var(--blue);
+  --component-active-text: var(--white);
+  --alt-row-color: var(--component-bg);
+  /* Border radius */
+  --border-radius-0: 2px 10px 13px 2px / 4px 2px 2px 2px;
+  --border-radius-sm: 6px 5px 9px 9px / 6px 6px 6px 6px;
+  --border-radius-md: 11px 9px 9px 7px / 9px 11px 12px 12px;
+  --border-radius-lg: 17px 17px 12px 13px / 16px 18px 18px 17px;
+  --border-radius-circle: 87% 76% 74% 68% / 73% 83% 77% 86%;
+  /* Component specific */
+  --accordion-width: 335px;
+  --accordion-height: 250px;
+  --alert-width: 275px;
+  --appbar-width: 360px;
+  --android-width: 401px;
+  --android-height: 797px;
+  --arrow-width: 160px;
+  --arrow-height: 100px;
+  --break-line-height: 40px;
+  --browser-width: 768px;
+  --browser-height: 400px;
+  --chart-bar-width: 335px;
+  --chart-bar-height: 188px;
+  --chart-line-width: 335px;
+  --chart-line-height: 188px;
+  --chart-pie-width: 188px;
+  --color-picker-width: 42px;
+  --color-picker-height: 26px;
+  --comment-width: 28px;
+  --comment-height: 40px;
+  --comment-color: var(--blue3);
+  --coverflow-width: 500px;
+  --coverflow-height: 160px;
+  --date-picker-width: 335px;
+  --editor-toolbar-width: 335px;
+  --fieldset-width: 335px;
+  --fieldset-height: 188px;
+  --highlighter-width: 100px;
+  --highlighter-height: 16px;
+  --image-width: 100px;
+  --image-height: 100px;
+  --ios-picker-width: 375px;
+  --ios-picker-height: 188px;
+  --ipad-width: 833px;
+  --ipad-height: 1209px;
+  --iphone-x-width: 429px;
+  --iphone-x-height: 860px;
+  --iphone-678-width: 435px;
+  --iphone-678-height: 869px;
+  --keyboard-phone-portrait-width: 375px;
+  --keyboard-phone-portrait-height: 300px;
+  --keyboard-phone-landscape-width: 812px;
+  --keyboard-phone-landscape-height: 175px;
+  --keyboard-tablet-portrait-width: 768px;
+  --keyboard-tablet-portrait-height: 270px;
+  --keyboard-tablet-landscape-width: 1024px;
+  --keyboard-tablet-landscape-height: 360px;
+  --line-width: 335px;
+  --line-height: 10px;
+  --link-bar-separator: var(--gray1);
+  --link-bar-selected: var(--link-bar-separator);
+  --menu-width: 180px;
+  --menu-bar-align: flex-start;
+  --modal-overlay-width: 375px;
+  --modal-overlay-height: var(--modal-overlay-width);
+  --popover-width: 220px;
+  --popover-arrow-width: 2.25rem;
+  --popover-arrow-height: 1.125rem;
+  --popover-arrow-difference: calc((var(--popover-arrow-width) - var(--popover-arrow-height)) / 2);
+  --progress-bar-width: 335px;
+  --progress-bar-height: 16px;
+  --red-x-width: 180px;
+  --red-x-height: 180px;
+  --shape-width: 100px;
+  --shape-height: 100px;
+  --shape-text-color: var(--gray1);
+  --scribble-width: 240px;
+  --scribble-height: 130px;
+  --scrollbar-width: 18px;
+  --scrollbar-height: 160px;
+  --slider-width: 180px;
+  --slider-height: 20px;
+  --slider-track-height: 4px;
+  --splitter-width: 335px;
+  --splitter-height: 12px;
+  --street-map-width: 375px;
+  --street-map-height: 250px;
+  --subtitle-placeholder-width: 335px;
+  --subtitle-placeholder-height: 28px;
+  --switch-color: var(--green);
+  --table-width: 335px;
+  --table-header-color: var(--gray5);
+  --tabs-width: 335px;
+  --tabs-height: 160px;
+  --text-width:335px;
+  --text-input-width: 188px;
+  --text-input-height: 2em;
+  --text-area-width: 180px;
+  --text-area-height: 80px;
+  --text-placeholder-width: 335px;
+  --text-placeholder-height: 88px;
+  --time-picker-width: 335px;
+  --tooltip-min-width: 1rem;
+  --tooltip-arrow-width: 1rem;
+  --tooltip-arrow-height: .5rem;
+  --video-player-width: 375px;
+  --video-player-height: 267px;
+  --video-player-controls-height: 40px;
+  --webcam-width: 375px;
+  --webcam-height: 211px;
+  --window-width: 500px;
+  --window-height: 300px; }
+
+.element__wrapper {
+/*
+display: inline-flex;
+box-sizing: border-box;
+position: absolute;
+
+  &:hover {
+      &:before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background-color: transparent;
+          border: 1px dashed blue;
+      }
+  }
+
+  &.element__selected {
+      background-color: #eee;
+  }
+
+    &.element__selectable {
+      box-sizing: border-box;
+      background-color: green!important;
+      color: #fff;
+  }
+*/
+
+
+.browser {
+width: var(--browser-width);
+height: var(--browser-height);
+overflow: hidden;
+border: 2px solid var(--component-border-color);
+background-color: var(--gray3);
+border-radius: var(--border-radius-sm); }
+  .browser .icon {
+    color: var(--gray4); }
+  .browser__header {
+    display: flex;
+    padding: .5em .25em 0 .5em;
+    background-color: var(--gray5); }
+    .browser__header .icon {
+      margin: .25em .75em 0;
+      font-size: .75em; }
+  .browser__title {
+    padding: .5em .75em;
+    width: 18em;
+    margin: 0 auto 0 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 0.8125em;
+    font-weight: normal;
+    background-color: var(--gray6);
+    border-radius: .25rem .25rem 0 0; }
+  .browser__toolbar {
+    display: flex;
+    align-items: center;
+    padding: .5em 0;
+    background-color: var(--gray6); }
+    .browser__toolbar .icon {
+      margin: 0 .5em; }
+  .browser__search {
+    border: 2px solid var(--gray5);
+    border-radius: var(--border-radius-lg);
+    flex-grow: 1;
+    font-size: .875rem;
+    height: 2.0625em;
+    padding: .25em .75em;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    color: var(--gray3); }
+  .browser--no-borders {
+    border: 0;
+    border-radius: 0; }
+}
