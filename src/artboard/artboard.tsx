@@ -996,14 +996,14 @@ export default class ArtBoard extends React.PureComponent<
 
       </BaseElement>
     );
-    
+
     demoElements.push(customElement);
     demoElements.push(customElement2);
     demoElements.push(customElement3);
     demoElements.push(customElement4);
     demoElements.push(editorElement);
 
-    let index = 0;
+    let index = (0);
     for (let column = 0; column < 4; column++) {
       for (let i = 0; i < 30; i++) {
         index++;
@@ -1027,6 +1027,7 @@ export default class ArtBoard extends React.PureComponent<
 
     return demoElements;
   };
+
 
   renderContent = () => {
     const { viewMode } = this.props;
