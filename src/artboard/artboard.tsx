@@ -986,10 +986,22 @@ export default class ArtBoard extends React.PureComponent<
       </BaseElement>
     );
 
+    const editorElement = (
+      <BaseElement
+        key={`custom__element`}
+        onMounted={this.handleChildMounted}
+        onUnmounted={this.handleChildUnmounted}
+      >
+      <textarea id="editor"></textarea>
+
+      </BaseElement>
+    );
+    
     demoElements.push(customElement);
     demoElements.push(customElement2);
     demoElements.push(customElement3);
     demoElements.push(customElement4);
+    demoElements.push(editorElement);
 
     let index = 0;
     for (let column = 0; column < 4; column++) {
